@@ -18,22 +18,30 @@
 <body>
     <header>
         <div class="img">
-            <img src="images/hamburger.png" id="menu">
+
             <img src="images/logo.png" id="logo">
         </div>
-        <ul>
-            <li><a  href="">Home</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact us</a></li>
-            <li>
-               <a href=""> <span> Login </span> </a> 
-            </li>
-            <li>
-                <a href=""><span> Sign up </span></a>
-            </li>
+
+        <nav>
+        
+            <ul>
+                <img src="/images/close.png" alt="" id="close">
+                <li><a  href="">Home</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact us</a></li>
+                <li>
+                <a href=""> <span> Login </span> </a> 
+                </li>
+                <li>
+                    <a href=""><span> Sign up </span></a>
+                </li>
+                
+            </ul>
             
-        </ul>
+        </nav>
+            
+        <img src="/images/menu.png" alt="" id="menu"> 
     </header>
 
     <section>
@@ -49,13 +57,15 @@
         </div>
         <div class="sponsors">
             <div class="trust">
-                <h2>Trusted by:</h2>            
-                <img src="images/KPMG.png">
-                <img src="images/Amazon.png">
-                <img src="images/Netflix.png">
-                <img src="images/Paypal.png">
-                <img src="images/Fidelity.png">
-                <img src="images/piggy.png">
+                <h2>Trusted by:</h2>
+                <div id="make-view">            
+                    <img src="images/KPMG.png">
+                    <img src="images/Amazon.png">
+                    <img src="images/Netflix.png">
+                    <img src="images/Paypal.png">
+                    <img src="images/Fidelity.png">
+                    <img src="images/piggy.png">
+                </div>
             </div>
         </div>
     </section>
@@ -202,5 +212,19 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+        const menu = document.querySelector('#menu')
+        const close = document.querySelector('#close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+
+    </script>
+
 </body>
 </html>

@@ -1,3 +1,7 @@
+@import "tablet-two";
+@import "tablet";
+@import "mobile-screen";
+
 $footer-color:#12202F;
 
 *{
@@ -23,16 +27,14 @@ header{
         padding-left: 16px;
     }
     
-    img #menu{
-        width:16px;
-        height:16px;
-    }
 
     .img{
         margin-left: 76px;
         display: flex;
         align-items: center;
     }
+
+    nav{
 
     ul{
         list-style: none;
@@ -43,7 +45,6 @@ header{
 
             span{
                 color: #6BB99C;
-;
             }
             
         }
@@ -54,6 +55,16 @@ header{
           margin-top: 51px;
         }
     }
+    #close{
+        display:none;
+    }
+    
+ }
+    
+#menu{
+    display:none;
+}
+
 }
 
 
@@ -114,7 +125,7 @@ section{
             height: 5vh;
       
         display: flex;
-        width: 80%;
+        width: 100%;
         margin: auto;
         justify-content: center;
 
@@ -141,7 +152,7 @@ main{
 
             .content{
                     
-                width: 35%;
+                width: 40%;
                 display: flex;
                 flex-direction: column;
                 padding-top: 3rem;
@@ -181,7 +192,7 @@ main{
         justify-content: space-between;
 
             .content{
-                width: 35%;
+                width: 45%;
                 display: flex;
                 flex-direction: column;
                 padding-top: 3rem;
@@ -222,7 +233,7 @@ footer{
     display: flex;
 
     .content{
-        width: 90%;
+        width: 100%;
         margin:auto;
         display: flex;
         justify-content: space-evenly;
@@ -231,6 +242,8 @@ footer{
 
         .first, .second, .third{
             display: flex;
+            margin-left: .2rem;
+            border: #FAF9F8 dashed 1px;
             
             form{
                 margin-top: 2rem;
@@ -295,7 +308,8 @@ article{
         margin: auto;
         position: relative;   
 
-        .top{
+        #top{
+            margin-top: 1rem;
             margin-bottom: 2rem;
         }
             
@@ -375,3 +389,204 @@ article{
     }
 
 }
+
+.open-nav{
+    transform: translateX(0%);
+}
+
+@media screen and (max-width:1024px){
+
+    // *{
+    //     overflow-x: hidden;
+    // }
+
+    footer{
+        
+        margin-top: .5rem;
+        height:unset;
+        padding: 0 2rem 0 2rem;
+
+        .content{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+
+            .third{
+                margin-left: 1rem;
+
+                form{
+                    margin-top: 2rem;
+                    
+                    input[type=text]{
+                        width: 100%;
+                        margin-bottom: 2rem;
+                    }
+
+                    .newsletter-box{
+                        background: none;
+
+                        padding: none;
+
+                    }
+                }
+            }
+        }
+    }
+
+    article{
+        margin-top: 1rem;
+        padding: .1rem;
+        
+
+        .appreciation{
+            width: 90%;
+            margin-bottom: 1rem;
+            position: relative;
+
+            #top{
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+            }
+
+            .compliments{
+                #circle-1 {
+                    position: absolute;
+                    top: 2%;
+                    left: 11%;
+                    width: 156px;
+                    height: 156px;
+                }
+
+                #circle-2 {
+                    position: absolute;
+                    top: 2%;
+                    right: 11%;
+                    width: 156px;
+                    height: 156px;
+
+                }
+
+                .boxes-1{
+                    .box-with{
+
+                        padding: 5rem 1rem 3rem 1rem;
+                    }
+                }
+            }
+
+            
+            
+        }
+    }
+
+    main{
+        .main-content{
+            width: 80%;
+            margin: auto;
+
+            .description-1{
+                margin-top: 1rem;
+                
+                .content{
+
+                    width: 45%;
+                }
+            }
+            .description-2{
+                margin-top: 1rem;
+                
+                .content{
+
+                    width: 45%;
+                }
+            }
+            
+        }
+    }
+
+    .sponsors{
+        width: 100%;
+        margin: auto;
+        padding: 4rem;
+
+        .trust{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            h2{
+                margin-bottom: 1rem;
+            }
+        }
+
+        img{
+            margin-left: .1rem;
+        }
+    }
+
+    section{
+
+        .attention{
+            width: 90%;
+        
+        .content-banner{
+            width: 60%;
+            h1{
+                font-size: 40px;
+            }
+
+            h3{
+                font-size: 25px;
+            }
+        }
+    }
+
+
+}
+
+header{
+    nav{
+    ul{
+        position: absolute;
+        right: 0%;
+        display:flex ;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        background-color: #fff;
+        transform: translateX(100%);
+        transition: transform .5s ease-in-out;
+
+        li:hover{
+            background-color: #179BD7;
+        }
+        
+            a{
+                color: #12202F;
+            }
+    } 
+    #close{
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+    }
+}
+#menu{
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    display: block;
+   width: 32px;
+    height: 24px;
+}
+}
+
+}
+
+
+
