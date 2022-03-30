@@ -18,7 +18,7 @@
 <body>
     <header>
         <div class="img">
-
+            <h1>lustreGit</h1>
             <img src="images/logo.png" id="logo">
         </div>
 
@@ -221,6 +221,10 @@
 
         menu.addEventListener('click', () => {
             nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
         })
 
 

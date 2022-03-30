@@ -1,0 +1,132 @@
+@media only screen and (max-width:820px){
+    footer{
+        .content{
+            
+            .third{
+                display: none;
+            }
+
+        }
+    }  
+
+    article{
+        .appreciation{
+            position: relative;
+            .compliments{
+                #circle-1{
+                    position: absolute;
+                    left: 13%;
+                }
+                #circle-2{
+                    right: 13%;
+                }
+
+                .boxes-1{
+                    .box-with{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .main-content{
+            width: 90%;
+
+            h1{
+                font-size: 30px;
+            }
+            .description-1{
+
+                .content{
+                    width: 48%;
+                }
+            }
+        
+        .description-2{
+
+            .content{
+                width: 48%;
+            }
+        }
+    }
+}
+
+
+    section{
+
+        .desktop-1{
+            height: 40vh;
+            margin-bottom: 1rem;
+        }
+
+        .attention{
+            .content-banner{
+                position: absolute;
+                top: 20%;
+            }
+        }
+
+        .sponsors{
+            display: none;
+            .trust{
+                height: unset;
+
+                #make-view{
+                    display: column;
+                }
+            }
+            
+        }
+    }
+
+    header{
+
+        #menu{
+            top: 4%;
+        }
+
+        nav{
+            ul{
+                position: absolute;
+                right: 0%;
+                display:flex ;
+                width: 40%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                background-color: #fff;
+                transform: translateX(100%);
+                transition: transform .5s ease-in-out;
+        
+                li:hover{
+                    background-color: #179BD7;
+                }
+                
+                    a{
+                        color: #12202F;
+                    }
+            } 
+        }
+
+        .open-nav{
+
+            ul{
+                position: absolute;
+                right: 0%;
+                display:flex ;
+                width: 40%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                background-color: #fff;
+                transform: translateX(0%);
+                transition: transform .5s ease-in-out; 
+            }
+        
+        }
+    }
+}
