@@ -44,8 +44,8 @@
         <img src="/images/menu.png" alt="" id="menu"> 
     </header>
 
-    <section>
-        <div class="desktop-1" data-aos="zoom-in">
+    <section data-aos="zoom-in">
+        <div class="desktop-1" >
             <div class="attention">
                 <div class="content-banner">
                     <h1>Create magic with your brand in the most fascinating way...</h1>
